@@ -1,0 +1,19 @@
+---
+# Python settings
+python::version: '3.9'
+python::pip_version: 'latest'
+
+# Apache settings
+apache::version: '2.4'
+apache::mpm_module: 'prefork'
+
+# Node.js settings
+nodejs::version: '18.x'
+nodejs::npm_version: 'latest'
+
+# Redis settings
+redis::version: 'stable'
+redis::bind: '127.0.0.1'
+redis::port: 6379
+redis::maxmemory: '256mb'
+redis::maxmemory_policy: 'allkeys-lru'

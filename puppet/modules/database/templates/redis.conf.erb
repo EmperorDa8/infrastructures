@@ -1,0 +1,17 @@
+# Network
+bind <%= @bind %>
+port <%= @port %>
+
+# Memory Management
+maxmemory <%= @maxmemory %>
+maxmemory-policy <%= @maxmemory_policy %>
+
+# General
+daemonize yes
+supervised systemd
+pidfile /var/run/redis/redis-server.pid
+loglevel notice
+logfile /var/log/redis/redis-server.log
+
+# Security
+protected-mode yes
